@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.header, .visual, .main, .slogan, .footer-content{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    background-color: orange;
+    height: 10vh;
+}
+.visual{
+    background-color: salmon;
+    height: 10vh;
+}
+.main{
+    background-color: blueviolet;
+    /*height: 60vh;*/
+    border: 10px solid greenyellow;
+    overflow: hidden;
+}
+.group{
+    height: 60vh;
+}
+.group1{
+    background-color: violet;
+    float: left;
+    width: 250px;
+    border: 2px solid whitesmoke;
+}
+.group2{
+    background-color: coral;
+    width: 380px;
+    float: left;
+}
+.group3{
+    background-color: crimson;
+    float: left;
+    width: 190px;
+}
+
+.slogan{
+    background-color: aqua;
+    height: 10vh;
+}
+.footer{
+    background-color: silver;
+}
+.footer-content{
+    background-color: pink;
+    height: 10vh;
+}
