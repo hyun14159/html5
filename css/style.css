@@ -8,9 +8,25 @@ body *, body *::before, body *::after{
     width: 940px;
     margin: 0 auto;
 }
+/* 헤더 */
 .header{
-    background-color: orange;
-    height: 10vh;
+    background-color: white;
+    position: relative;
+    /* border-top: 1px solid transparent; */
+}
+/* 로고 */
+.logo{
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 65px; 
+    font-size: 1em;
+    line-height: 1;
+}
+
+/* 안내링크 */
+.member{
+    margin: 0;
 }
 .visual{
     background-color: salmon;
