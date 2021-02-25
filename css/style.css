@@ -286,7 +286,7 @@ a{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #ccc;
+    background-color:rgb(255, 196, 86);
     padding: 0;
     border: 0;
     color: #fff;
@@ -310,6 +310,37 @@ a{
   .member-service .icon-right-open{
     color: #ce4827;
   }
+  /* 유효성 검사 배너 */
+.validation-list{
+    /* background:yellow; */
+    margin: 25px 0 0 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  .validation-list a{
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 7px 5px 5px 40px;
+    background: url(./images/validation_icon.png) no-repeat 15px 50%,
+    linear-gradient(180deg, #ccc, #eee);
+    background-color: #ccc;
+  }
+.term{  
+    background: linear-gradient(to bottom, #ccc, #eee);
+    background-color: #ccc;
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.term-heading{
+    font-size: 1.5rem;
+    padding: 15px 15px
+}
+.term-list-thumnail{
+}
 .slogan{
     background-color: aqua;
     height: 10vh;
