@@ -226,7 +226,7 @@ a{
     min-height: 400px;
 }
 .group1{
-    background-color: violet;
+    /* background-color: violet; */
     width: 250px;
     /*border: 2px solid whitesmoke;*/
 }
