@@ -231,11 +231,11 @@ a{
     /*border: 2px solid whitesmoke;*/
 }
 .group2{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     width: 380px;
 }
 .group3{
-    background-color: crimson;
+    /* background-color: crimson; */
     width: 190px;
 }
 .clearfix{
@@ -385,8 +385,59 @@ a{
   .term-list div:nth-child(even) .term-list-thumbnail{
     float: right;
   }
+/* 검색 폼 */
+.search-form{
+    background: #ccc linear-gradient(180deg, #ccc, #fff);
+    border: 1px solid #aaa;
+    border-bottom-color: #fff;
+    /* border-top:1px solid #aaa;
+    border-right:1px solid #aaa;
+    border-left:1px solid #aaa; */
+    padding: 15px 25px 10px;
+    border-radius: 15px 15px 0 0;
+  }
+  .search-form fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .search-form .flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-form input{
+    width: 200px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 5px;
+    height: 22px;
+    border-radius: 3px;
+  }
+  .btn-search{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: #212121;
+    color: #fff;
+    padding: 3px 10px;
+    height: 22px;
+    font-size: 1.1rem;
+  }치
+/* 플렉스 박스 배치 */
+.group3{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+.group3::before{
+    content:""
+}
+.group3 span{
+    border: 1px solid red;
+    margin-left: auto;
+}
+.group3 span:last-child{
+}
 
-  
 .slogan{
     background-color: aqua;
     height: 10vh;
