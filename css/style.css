@@ -581,11 +581,41 @@ a{
   background-position: -35px 0;
 }
 .related{
-  background-color: pink;
+  padding-top: 10px;
 }
 .event-heading, .related-heading{
   font-size: 1.5rem;
   margin: 0 0 10px 0;
+}
+.related-list{
+  background-color: pink;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  transition-property: height, padding, background-color;
+  /* transition-duration: 2s, 1s, 3s;
+  transition-delay: 0s, 2s, 3s; */
+  transition-duration: all 3s;
+}
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding: 10px 0;
+  background-color: white;
+}
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 2em;
+}
+
+/* 탭눌렀을때 영향을 주는  */
+.related-list a:focus{
+  outline: 1px solid darkblue;
+  outline-offset: -2px;
 }
 
 /* 슬로건 */
