@@ -421,6 +421,7 @@ a{
 }
 /* 공지사항 및 자료실 */
 .board{
+  background-color: yellow;
   position: relative;
   padding-top: 45px;
   margin-top: 20px;
@@ -460,11 +461,13 @@ a{
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+  background-color: skyblue;
 }
 .notice-list li, .pds-list li{
   display: flex;
 }
 .notice-list a, .pds-list a{
+  background-color: lightgreen;
   /* flex-grow: 1; */
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -532,15 +535,15 @@ a{
 .news-more::before{
   color: hsla(110, 30%, 70%, 1);
 }
-/* 신규 이벤트 및 관련 사이트 */
+/* 신규이벤트 및 관련 사이트 */
 .gradient-box{
-  background: #ccc linear-gradient(to bottom, #ccc, #eee);
   border: 1px solid #aaa;
   border-radius: 5px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
   padding: 10px;
 }
 .point-color{
-  color: var(--primary-color)
+  color: #ce4827;
 }
 .drop-shadow{
   display: inline-block;
@@ -572,52 +575,104 @@ a{
 }
 .btn-event-prev, .btn-event-next{
   width: 19px;
-  border: 0;
   height: 0;
+  border: 0;
   padding: 18px 0 0 0;
   background: url(./images/back_forward.png) no-repeat;
 }
 .btn-event-next{
   background-position: -35px 0;
 }
+
 .related{
   padding-top: 10px;
 }
-.event-heading, .related-heading{
+.section-heading{
   font-size: 1.5rem;
   margin: 0 0 10px 0;
 }
 .related-list{
-  background-color: pink;
+  background-color: #fff;
+  height: 27px;
   border: 1px solid #aaa;
   border-radius: 5px;
-  height: 27px;
   overflow: hidden;
   margin: 0;
   padding-left: 0;
   list-style-type: none;
-  transition-property: height, padding, background-color;
-  /* transition-duration: 2s, 1s, 3s;
-  transition-delay: 0s, 2s, 3s; */
-  transition-duration: all 3s;
+  transition-property: all;
+  transition-duration: 0.4s;
 }
 .related-list:hover, .related-list:focus{
   height: 147px;
   padding: 10px 0;
-  background-color: white;
 }
 .related-list a{
   display: block;
   line-height: 25px;
   text-indent: 2em;
+  border-radius: 5px;
 }
-
-/* 탭눌렀을때 영향을 주는  */
 .related-list a:focus{
   outline: 1px solid darkblue;
   outline-offset: -2px;
 }
+/* 인기사이트 */
+.favorite{
+  margin-top: 20px;
+  position: relative;
+  padding-top: 15px;
+}
+.favorite-more{
+  position: absolute;
+  top: 9px;
+  right: 2px;
+  padding: 8px;
+}
+.favorite-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.favorite-list li{
+  counter-increment: number;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.favorite-list li::before{
+  content: counter(number);
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+.favorite-list a{
+  flex-grow: 1;
+}
+.favorite-list .up,
+.favorite-list .stop,
+.favorite-list .down{
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  text-indent: 9px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+}
+.favorite-list .stop{
+  background-position: 0 50%;
+}
+.favorite-list .down{
+  background-position: 0 100%;
+}
 
+.favorite-more::before{
+  color: hsla(110, 30%, 50%,1)
+}
 /* 슬로건 */
 .slogan{
   background-color: lightgreen;
